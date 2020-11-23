@@ -1,12 +1,9 @@
 package test
 
 import (
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
-	"path/filepath"
-	"strings"
 	"testing"
 )
 
@@ -28,16 +25,4 @@ func Test_log(t *testing.T) {
 	//配置log的Flag参数
 	debugLog.SetFlags(debugLog.Flags() | log.LstdFlags)
 	debugLog.Println("A different prefix")
-}
-
-func Test_02(t *testing.T) {
-	path, _ := os.Getwd()
-	fmt.Println("path >>>>>>>>>>>>>>", path)
-
-	suffix := ".log"
-	res := strings.HasSuffix(path + ".log", suffix)
-	fmt.Println("res: ", !res)
-
-	filename := filepath.Base(strings.ToLower(path))
-	fmt.Println("filename >>>>>>>>>>>>>>>>>>>", filename)
 }

@@ -8,6 +8,10 @@ import (
 
 var db *gorm.DB
 
+func GetDB() *gorm.DB {
+	return db
+}
+
 // Setup initializes the database instance
 func Setup(config *Config) error {
 	var err error

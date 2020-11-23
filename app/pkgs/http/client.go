@@ -5,7 +5,6 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"net"
 	"net/http"
@@ -34,7 +33,6 @@ func (myself *Client) SetBaseUrl(baseUrl string) *Client {
 		myself.baseUrl = myself.baseUrl[0 : len(myself.baseUrl)-1]
 	}
 
-	fmt.Println("my_baseurl >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", myself.baseUrl)
 	return myself
 }
 
@@ -99,7 +97,6 @@ func (myself *Client) request(method string, uri string, body interface{}, heade
 	}
 
 	request.URL, err = myself.buildUrl(uri)
-	fmt.Println("URL >>>>>>>>>>>>>>>>>>>>>>>", request.URL)
 	if nil != err {
 		return nil, err
 	}
@@ -150,7 +147,6 @@ func (myself *Client) buildClient() *http.Client {
 }
 
 func (myself *Client) buildUrl(uri string) (*url.URL, error) {
-	fmt.Println("uri >>>>>>>>>>>>>>>>>>>>>>>", myself.baseUrl, uri)
 	if "" == myself.baseUrl {
 		return url.Parse(uri)
 	}

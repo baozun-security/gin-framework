@@ -85,10 +85,9 @@ func main() {
 
 	gin.SetMode(setting.Options.Server.Mode)
 	endPoint := fmt.Sprintf("%s:%d", setting.Options.Server.Addr, setting.Options.Server.Port)
-	engine := controllers.Init() // 初始化控制器
 	server := &http.Server{
 		Addr:         endPoint,
-		Handler:      engine,
+		Handler:      controllers.Init(), // 初始化控制器,
 		ReadTimeout:  setting.Options.Server.ReadTimeout * time.Second,
 		WriteTimeout: setting.Options.Server.WriteTimeout * time.Second,
 	}
