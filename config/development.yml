@@ -1,0 +1,30 @@
+---
+app:
+  name: leak-management
+
+logger:
+  output: stdout # stdout, stderr, filename, nil, null
+  level: debug # debug,info,warn,error,fatal,panic
+  format: json # json, text
+  rotation_count: 7 # 设置日志文件保留个数
+
+server:
+  addr: 0.0.0.0
+  port: 9090
+  mode: debug # debug or release
+  read_timeout: 60
+  write_timeout: 60
+
+database:
+  type: mysql
+  user: dbuser
+  password: 1qaz@WSX123
+  host: 10.101.191.106:3306
+  table_prefix: blog_
+
+redis:
+  host: 10.101.191.106:6379
+  password:
+  database: 0
+  max_idle: 100 # 最大空闲连接数
+  max_active: 130 # 最大分配连接数

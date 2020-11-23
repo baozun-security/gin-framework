@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0da4637-1def-4e81-ae44-fb21ae46e775" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1kVDNmZXtZk7tmW61asSG60IExm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-gin-example" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\app\go\leak-management\app\pkgs\response" />
+      <recent name="D:\app\go\leak-management\app\controllers" />
+      <recent name="D:\app\go\leak-management\app\pkgs\mysql" />
+      <recent name="D:\app\go\leak-management\app\models" />
+      <recent name="D:\app\go\leak-management\app\pkgs\setting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build baozun.com/leak/app" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/app/main.go" />
+      <package value="baozun.com/leak/app" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/app/main.go" />
+      <package value="baozun.com/leak" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestError in baozun.com/leak/app/pkgs/errors" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$/app/pkgs/errors" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="baozun.com/leak/app/pkgs/errors" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestError\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestHttp in baozun.com/leak/app/pkgs/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$/app/pkgs/http" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="baozun.com/leak/app/pkgs/http" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestHttp\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLock in baozun.com/leak/app/pkgs/redis" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$/app/pkgs/redis" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="baozun.com/leak/app/pkgs/redis" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestLock\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.TestError in baozun.com/leak/app/pkgs/errors" />
+        <item itemvalue="Go Test.TestHttp in baozun.com/leak/app/pkgs/http" />
+        <item itemvalue="Go Test.TestLock in baozun.com/leak/app/pkgs/redis" />
+        <item itemvalue="Go Build.go build baozun.com/leak/app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="282" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605972878558">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="282" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1605972878558" />
+    <state x="418" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1605965961826">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="418" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1605965961826" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606058400827">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606058400827" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1606058439967">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1606058439967" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606055991125">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606055991125" />
+    <state x="363" y="252" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1605967893284">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="363" y="252" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1280.680@0.0.1280.680" timestamp="1605967893284" />
+  </component>
+</project>
