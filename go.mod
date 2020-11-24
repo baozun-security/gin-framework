@@ -1,4 +1,4 @@
-module baozun.com/leak
+module baozun.com/framework
 
 go 1.15
 

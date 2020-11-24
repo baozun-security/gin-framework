@@ -1,7 +1,7 @@
 package redis
 
 import (
-	"baozun.com/leak/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/logger"
 	"fmt"
 	"github.com/garyburd/redigo/redis"
 	"time"

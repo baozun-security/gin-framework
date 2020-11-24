@@ -1,12 +1,12 @@
 package main
 
 import (
-	"baozun.com/leak/app/controllers"
-	"baozun.com/leak/app/pkgs/logger"
-	"baozun.com/leak/app/pkgs/mysql"
-	"baozun.com/leak/app/pkgs/redis"
-	"baozun.com/leak/app/pkgs/server"
-	"baozun.com/leak/app/pkgs/setting"
+	"baozun.com/framework/app/controllers"
+	"baozun.com/framework/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/mysql"
+	"baozun.com/framework/app/pkgs/redis"
+	"baozun.com/framework/app/pkgs/server"
+	"baozun.com/framework/app/pkgs/setting"
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"

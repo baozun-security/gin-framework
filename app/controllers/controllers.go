@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	v1 "baozun.com/leak/app/controllers/v1"
-	"baozun.com/leak/app/middlewares"
-	"baozun.com/leak/app/pkgs/response"
+	v1 "baozun.com/framework/app/controllers/v1"
+	"baozun.com/framework/app/middlewares"
+	"baozun.com/framework/app/pkgs/response"
 	e "errors"
 	"github.com/gin-gonic/gin"
 	"net/http"

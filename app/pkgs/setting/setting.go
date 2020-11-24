@@ -1,10 +1,10 @@
 package setting
 
 import (
-	"baozun.com/leak/app/pkgs/logger"
-	"baozun.com/leak/app/pkgs/mysql"
-	"baozun.com/leak/app/pkgs/redis"
-	"baozun.com/leak/app/pkgs/server"
+	"baozun.com/framework/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/mysql"
+	"baozun.com/framework/app/pkgs/redis"
+	"baozun.com/framework/app/pkgs/server"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"

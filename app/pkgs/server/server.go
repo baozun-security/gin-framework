@@ -1,7 +1,7 @@
 package server
 
 import (
-	"baozun.com/leak/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/logger"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"

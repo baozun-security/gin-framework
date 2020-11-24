@@ -1,8 +1,8 @@
 package middlewares
 
 import (
-	"baozun.com/leak/app/pkgs/logger"
-	"baozun.com/leak/app/pkgs/response"
+	"baozun.com/framework/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/response"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"

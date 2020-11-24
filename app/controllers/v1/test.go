@@ -1,7 +1,7 @@
 package v1
 
 import (
-	"baozun.com/leak/app/pkgs/response"
+	"baozun.com/framework/app/pkgs/response"
 	"github.com/gin-gonic/gin"
 )
 

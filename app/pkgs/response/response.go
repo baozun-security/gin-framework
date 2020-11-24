@@ -1,7 +1,7 @@
 package response
 
 import (
-	"baozun.com/leak/app/pkgs/errors"
+	"baozun.com/framework/app/pkgs/errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )

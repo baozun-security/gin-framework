@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"baozun.com/leak/app/pkgs/logger"
+	"baozun.com/framework/app/pkgs/logger"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )
