@@ -7,7 +7,7 @@ func errorWrapper(defaultMessage string, code int) func() *BusinessError {
 }
 
 var (
-	OK = NewBusinessError("Success.", 200)
+	OK = errorWrapper("Success.", 200)
 
 	//50000 ~ 50100 通用异常码
 	InvalidRequest   = errorWrapper("Invalid Request", 50000)

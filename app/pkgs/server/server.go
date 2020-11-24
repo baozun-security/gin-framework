@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-func Run(router *gin.Engine, config *Config) string {
+func Run(router *gin.Engine, config *Config) {
 	srv := &http.Server{
 		Addr:         config.Endpoint(),
 		Handler:      router,
@@ -47,6 +47,4 @@ func Run(router *gin.Engine, config *Config) string {
 	if openErr == nil {
 		_ = ioutil.WriteFile("pid", []byte(pid), 0)
 	}
-
-	return "test"
 }

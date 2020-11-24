@@ -20,19 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0da4637-1def-4e81-ae44-fb21ae46e775" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/controllers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pkgs/server/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pkgs/server/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/middlewares/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/middlewares/recovery.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/v1/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/v1/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/controllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/controllers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/pkgs/errors/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pkgs/errors/errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pkgs/setting/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pkgs/setting/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pkgs/setting/setting.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pkgs/setting/setting.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/log_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/logrus_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test/rotatelogs_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pkgs/logger/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pkgs/logger/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pkgs/server/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/pkgs/server/server.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,7 @@
       <recent name="D:\app\go\leak-management\app\pkgs\setting" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Test.Test_01 in baozun.com/leak/app/controllers">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="leak-management" />
       <working_directory value="$PROJECT_DIR$" />
@@ -84,17 +78,6 @@
       <filePath value="$PROJECT_DIR$/app/main.go" />
       <package value="baozun.com/leak" />
       <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestError in baozun.com/leak/app/pkgs/errors (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leak-management" />
-      <working_directory value="$PROJECT_DIR$/app/pkgs/errors" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="baozun.com/leak/app/pkgs/errors" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestError\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestHttp in baozun.com/leak/app/pkgs/http (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -130,13 +113,24 @@
       <pattern value="^\QTestLock\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_01 in baozun.com/leak/app/controllers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leak-management" />
+      <working_directory value="$PROJECT_DIR$/app/controllers" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="baozun.com/leak/app/controllers" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_01\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.Test_01 in baozun.com/leak/app/controllers" />
         <item itemvalue="Go Test.TestInt64TimeToString in baozun.com/leak/app/pkgs/utils" />
         <item itemvalue="Go Test.TestHttp in baozun.com/leak/app/pkgs/http (1)" />
         <item itemvalue="Go Test.TestLock in baozun.com/leak/app/pkgs/redis" />
-        <item itemvalue="Go Test.TestError in baozun.com/leak/app/pkgs/errors (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -176,25 +170,25 @@
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606188296736" />
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606102907194" />
-    <state width="1200" height="235" key="GridCell.Tab.0.bottom" timestamp="1606198242754">
+    <state width="1237" height="233" key="GridCell.Tab.0.bottom" timestamp="1606205968490">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1200" height="235" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606198242754" />
+    <state width="1237" height="233" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606205968490" />
     <state width="1237" height="273" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1606101290767" />
-    <state width="1200" height="235" key="GridCell.Tab.0.center" timestamp="1606198242754">
+    <state width="1237" height="233" key="GridCell.Tab.0.center" timestamp="1606205968489">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1200" height="235" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606198242754" />
+    <state width="1237" height="233" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606205968489" />
     <state width="1237" height="273" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1606101290767" />
-    <state width="1200" height="235" key="GridCell.Tab.0.left" timestamp="1606198242754">
+    <state width="1237" height="233" key="GridCell.Tab.0.left" timestamp="1606205968489">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1200" height="235" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606198242754" />
+    <state width="1237" height="233" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606205968489" />
     <state width="1237" height="273" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1606101290767" />
-    <state width="1200" height="235" key="GridCell.Tab.0.right" timestamp="1606198242754">
+    <state width="1237" height="233" key="GridCell.Tab.0.right" timestamp="1606205968489">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1200" height="235" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606198242754" />
+    <state width="1237" height="233" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1606205968489" />
     <state width="1237" height="273" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1606101290767" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1606058439967">
       <screen x="0" y="0" width="1280" height="680" />

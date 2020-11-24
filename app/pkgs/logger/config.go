@@ -119,8 +119,8 @@ func (c *Config) NewWriter() (w io.Writer, err error) {
 		w, err = rotatelogs.New(
 			c.loggerFilename+".%Y%m%d",
 			//rotatelogs.WithLinkName(c.loggerFilename), // 生成软链，指向最新日志文件
-			rotatelogs.WithRotationCount(c.RotationCount),            // 设置文件清理前最多保存的个数
-			rotatelogs.WithRotationTime(time.Duration(24)*time.Hour), // 设置日志分割的时间
+			rotatelogs.WithRotationCount(c.RotationCount), // 设置文件清理前最多保存的个数
+			rotatelogs.WithRotationTime(24*time.Hour),     // 设置日志分割的时间
 		)
 	}
 	return
