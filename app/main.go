@@ -5,18 +5,15 @@ import (
 	"baozun.com/leak/app/pkgs/logger"
 	"baozun.com/leak/app/pkgs/mysql"
 	"baozun.com/leak/app/pkgs/redis"
+	"baozun.com/leak/app/pkgs/server"
 	"baozun.com/leak/app/pkgs/setting"
-	"context"
 	"flag"
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"
-	"net/http"
 	"os"
-	"os/signal"
 	"path"
 	"runtime"
-	"time"
 )
 
 var (
@@ -73,44 +70,16 @@ func initConfig() {
 	if err := redis.Setup(setting.Options.Redis); nil != err {
 		log.Panicf(fmt.Sprintf("Faild to setup redis. %v\n", err))
 	}
+	// set gin mode
+	gin.SetMode(setting.Options.Server.Mode)
+}
+
+func init() {
+	initEnv()    // 初始化线程
+	initArgs()   // 解析命令行参数
+	initConfig() // 初始化配置
 }
 
 func main() {
-	// 初始化线程
-	initEnv()
-	// 解析命令行参数
-	initArgs()
-	// 初始化配置
-	initConfig()
-
-	gin.SetMode(setting.Options.Server.Mode)
-	endPoint := fmt.Sprintf("%s:%d", setting.Options.Server.Addr, setting.Options.Server.Port)
-	server := &http.Server{
-		Addr:         endPoint,
-		Handler:      controllers.Init(), // 初始化控制器,
-		ReadTimeout:  setting.Options.Server.ReadTimeout * time.Second,
-		WriteTimeout: setting.Options.Server.WriteTimeout * time.Second,
-	}
-	logger.Logger.Infof("start http server listening %s", endPoint)
-
-	go func() {
-		// service connections
-		if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
-			log.Panicf("listen: %s\n", err)
-		}
-	}()
-
-	// Wait for interrupt signal to gracefully shutdown the server with
-	// a timeout of 5 seconds.
-	quit := make(chan os.Signal)
-	signal.Notify(quit, os.Interrupt)
-	<-quit
-	log.Println("Shutdown Server ...")
-
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-	if err := server.Shutdown(ctx); err != nil {
-		log.Fatal("Server Shutdown:", err)
-	}
-	log.Println("Server exiting")
+	server.Run(controllers.InitRouter(), setting.Options.Server)
 }

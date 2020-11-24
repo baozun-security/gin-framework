@@ -4,11 +4,11 @@ import (
 	"baozun.com/leak/app/pkgs/logger"
 	"baozun.com/leak/app/pkgs/mysql"
 	"baozun.com/leak/app/pkgs/redis"
+	"baozun.com/leak/app/pkgs/server"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"time"
 )
 
 // Find config file based on run mode.
@@ -36,20 +36,11 @@ type App struct {
 	Name string `yaml:"name"`
 }
 
-// server config
-type Server struct {
-	Addr         string        `yaml:"addr"`
-	Port         int           `yaml:"port"`
-	Mode         string        `yaml:"mode"`
-	ReadTimeout  time.Duration `yaml:"read_timeout"`
-	WriteTimeout time.Duration `yaml:"write_timeout"`
-}
-
 // AppOptions defines specs for config
 type AppOptions struct {
 	App      *App           `yaml:"app"`
 	Logger   *logger.Config `yaml:"logger"`
-	Server   *Server        `yaml:"server"`
+	Server   *server.Config `yaml:"server"`
 	Database *mysql.Config  `yaml:"database"`
 	Redis    *redis.Config  `yaml:"redis"`
 }
